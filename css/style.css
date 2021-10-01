@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --var-red : red;
+    --var-black : black;
+    --var-white : white;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--var-white);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+#menu ul li {
+    margin: 0 20px;
+}
+
+#corps {
+    width: 90%;
+    height: 70vh;
+    margin: auto;
+    position: relative;
+    color: var(--var-white);
+    background-color: var(--var-black);
+}
+.img {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 60%;
+    background-image: url('/img/fond.png');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.text {
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 30px;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+p {
+    width: 60%;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+#signUp {
+    background-color: var(--var-red);
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.button {
+    background-color: var(--var-red);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--var-white);
+}
+
+.footer {
+    color: var(--var-red);
+    margin: 30px 0 20px 20px;
+}
