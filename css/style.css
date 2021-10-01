@@ -21,6 +21,7 @@ body {
     bottom: 0;
     right: 0;
     background-color: var(--var-white);
+    color: var(--var-black);
 }
 
 nav {
@@ -30,6 +31,7 @@ nav {
     width: 90%;
     margin: auto;
     padding: 30px;
+    align-items: center;
 }
 
 #menu {
@@ -48,6 +50,13 @@ nav {
 
 #menu ul li {
     margin: 0 20px;
+    padding: 5px;
+}
+
+#menu ul li:hover {
+    background-color: var(--var-red);
+    color: var(--var-white);
+    border-radius: 5px;
 }
 
 #corps {
@@ -57,7 +66,10 @@ nav {
     position: relative;
     color: var(--var-white);
     background-color: var(--var-black);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 dimgray;
 }
+
 .img {
     position: absolute;
     right: 0;
@@ -66,6 +78,8 @@ nav {
     background-image: url('/img/fond.png');
     background-size: cover;
     background-position: bottom;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .text {
@@ -107,5 +121,27 @@ p {
 
 .footer {
     color: var(--var-red);
-    margin: 30px 0 20px 20px;
+    margin: 60px 0 20px 20px;
 }
+
+.dark {
+    --var-black : white;
+    --var-white : black;
+}
+
+.lightDark {
+    width: 50px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: var(--var-black);
+    border: var(--var-red) 1px solid;
+}
+
+.rondBouton {
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    background-color: var(--var-white);
+    transition: 500ms;
+}
+
